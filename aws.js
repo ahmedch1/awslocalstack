@@ -42,5 +42,18 @@ const uploadFile = async (data, fileName) =>
             },
         )
     })
+var bucketParams = {
+    Bucket : 'demo-bucket',
+};
+const listObjects =  () =>{
+    s3client.listObjects(bucketParams, function(err, data) {
+        if (err) {
+            console.log("Error", err);
+        } else {
+            console.log("Success", data);
+        }
+    });
+    }
 
 module.exports = uploadFile
+module.exports = listObjects
