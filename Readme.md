@@ -4,4 +4,12 @@
 1. Install Docker
 2. Install AWS CLI
 3. aws configure to create credentials
-4. 
+
+
+
+
+
+
+**Notes**
+1. To check whether service is running or not _localhost:4566_
+2. 
